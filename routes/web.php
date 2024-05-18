@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // require __DIR__.'/auth.php';
+
+// Front 
 Route::prefix('/')->name('front.')->group(function () {
     Route::view('','front.index')->name('index'); //INDEX PAGE
     Route::view('about','front.about')->name('about'); //About PAGE
@@ -26,4 +28,9 @@ Route::prefix('/')->name('front.')->group(function () {
     Route::view('projects','front.projects')->name('projects'); //PROJECTS PAGE
     Route::view('team','front.team')->name('team'); //TEAM PAGE
      Route::view('testimonials','front.testimonials')->name('testimonials'); //PROJECTS PAGE
+});
+
+// Admin Dashboard
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::view('','admin.index')->name('index'); //INDEX PAGE
 });
