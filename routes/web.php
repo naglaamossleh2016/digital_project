@@ -33,4 +33,6 @@ Route::prefix('/')->name('front.')->group(function () {
 // Admin Dashboard
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::view('','admin.index')->name('index'); //INDEX PAGE
+    Route::view('/login','admin.auth.login')->name('login'); //INDEX PAGE
+
 });
