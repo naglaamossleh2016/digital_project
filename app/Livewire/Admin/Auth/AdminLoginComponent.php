@@ -21,7 +21,10 @@ class AdminLoginComponent extends Component
     }
     public function submit(){
         $this->validate();
-        if(!Auth::guard('admins')->attempt(['email'=>$this->email,'password'=>$this->password],$this->remember)){
+        // if(!Auth::guard('admin')->attempt(['email'=>$this->email,'password'=>$this->password],$this->remember)){
+        //   throw ValidationException::withMessages(['login'=>trans('login data incorrect try again'),]); 
+        // }
+         if(!Auth::guard('admin')->attempt(['email'=>$this->email,'password'=>$this->password],$this->remember)){
           throw ValidationException::withMessages(['login'=>trans('login data incorrect try again'),]); 
         }
         return to_route('admin.index');

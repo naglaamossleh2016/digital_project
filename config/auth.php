@@ -16,7 +16,7 @@ return [
     'defaults' => [
         'guard' => env('AUTH_GUARD', 'web'),
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
-        'driver' => 'file', // Change to 'file'
+        
     ],
 
     /*
@@ -41,7 +41,7 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-         'admins' => [
+         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
