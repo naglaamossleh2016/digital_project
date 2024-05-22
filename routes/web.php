@@ -35,6 +35,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('admin')->group(function(){
 
         Route::view('','admin.index')->name('index'); //INDEX PAGE
+        Route::view('/setting','admin.settings.index')->name('setting'); //INDEX PAGE
     });
     Route::view('/login','admin.auth.login')->middleware('guest:admin')->name('login'); //INDEX PAGE
 
