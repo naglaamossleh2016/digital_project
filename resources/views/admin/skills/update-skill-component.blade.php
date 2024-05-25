@@ -1,4 +1,4 @@
-<x-create-modal title="Add Skill">
+<x-edit-modal title="Edit Skill">
     <div class="col-md-6 mb-3">
         <label class="form-label">Name</label>
         <input type="text" class="form-control" placeholder="Name" wire:model="name" />
@@ -11,5 +11,6 @@
             wire:model="progress" />
 
         @include('admin.error', ['property' => 'progress'])
+
     </div>
-</x-create-modal>
+</x-edit-modal>

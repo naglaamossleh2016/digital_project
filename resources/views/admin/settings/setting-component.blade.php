@@ -7,10 +7,8 @@
     <div class="col-sm-6">
         <label class="col-sm-2 col-form-label" for="basic-default-name">Name</label>
         <input type="text" class="form-control" placeholder="Name" wire:model='settings.name' />
+        @include('admin.error', ['property' => 'settings.name'])
 
-        @error('settings.name')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
 
     </div>
 
@@ -18,9 +16,7 @@
     <div class="col-sm-6">
         <label class="col-sm-2 col-form-label" for="basic-default-company">Address</label>
         <input type="text" class="form-control" placeholder="Address" wire:model='settings.address' />
-        @error('settings.address')
-            <span class="text-danger">{{ $message }}</span>
-        @enderror
+        @include('admin.error', ['property' => 'settings.address'])
 
     </div>
 
@@ -87,7 +83,10 @@
 
     <div class="row justify-content-start mt-3">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">submit</button>
+            <button type="submit" class="btn btn-primary">
+
+                @include('admin.loading', ['buttonName' => 'submit'])
+            </button>
         </div>
     </div>
 </form>

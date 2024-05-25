@@ -33,4 +33,17 @@
             }
         });
     });
+
+    document.addEventListener('createModelToggle', event => {
+        $('#createModal').modal('toggle');
+    })
+    document.addEventListener('editModelToggle', event => {
+        $('#editModal').modal('toggle');
+    })
+    document.addEventListener('deleteModelToggle', event => {
+        $('#deleteModal').modal('toggle');
+    })
+    document.addEventListener('showModelToggle', event => {
+        $('#showModal').modal('toggle');
+    })
 </script>

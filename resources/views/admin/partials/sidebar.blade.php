@@ -80,6 +80,13 @@
                  <div data-i18n="Analytics">Skills</div>
              </a>
          </li>
+         <!-- Subscribers -->
+         <li class="menu-item @yield('subscribers-active')">
+             <a href="{{ route('admin.subscriber') }}" class="menu-link">
+                 <i class="menu-icon tf-icons bx bx-cog"></i>
+                 <div data-i18n="Analytics">subscribers</div>
+             </a>
+         </li>
      </ul>
  </aside>
  <!-- / Menu -->

@@ -5,7 +5,8 @@
     <div class="container-xxl flex-grow-1 container-p-y">
         <div class="mb-3"><!-- Button trigger modal -->
             <h4 class="fw-bold py-3 mb-4 d-inline"><span class="text-muted fw-light">Skills</h4>
-            <button type="button" class="btn btn-sm mb-2 mx-2 btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal">
+            <button type="button" class="btn btn-sm mb-2 mx-2 btn-primary" data-bs-toggle="modal"
+                data-bs-target="#createModal">
                 Add New
             </button>
         </div>
@@ -25,5 +26,8 @@
                     </div>
                 </div>
             </div>
+            @livewire('admin.skills.update-skill-component')
+            @livewire('admin.skills.delete-skill-component')
+            @livewire('admin.skills.show-skill-component')
         </div>
     @endsection
