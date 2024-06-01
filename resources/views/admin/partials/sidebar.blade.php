@@ -101,6 +101,13 @@
                  <div data-i18n="Analytics">services</div>
              </a>
          </li>
+         <!-- Messages -->
+         <li class="menu-item @yield('messages-active')">
+             <a href="{{ route('admin.message') }}" class="menu-link">
+                 <i class="menu-icon tf-icons bx bx-cog"></i>
+                 <div data-i18n="Analytics">messages</div>
+             </a>
+         </li>
      </ul>
  </aside>
  <!-- / Menu -->

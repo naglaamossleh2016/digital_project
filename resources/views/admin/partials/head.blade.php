@@ -41,4 +41,5 @@
       <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
       <script src="{{ asset('admin-assets') }}/js/config.js"></script>
 
+
   </head>
